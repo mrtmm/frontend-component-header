@@ -42,26 +42,26 @@ function Header({ intl }) {
   ];
 
   const userMenu = authenticatedUser === null ? [] : [
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
-      content: intl.formatMessage(messages['header.user.menu.dashboard']),
-    },
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
-      content: intl.formatMessage(messages['header.user.menu.profile']),
-    },
+    // {
+    //   type: 'item',
+    //   href: `${config.LMS_BASE_URL}/dashboard`,
+    //   content: intl.formatMessage(messages['header.user.menu.dashboard']),
+    // },
+    // {
+    //   type: 'item',
+    //   href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
+    //   content: intl.formatMessage(messages['header.user.menu.profile']),
+    // },
     {
       type: 'item',
       href: `${config.LMS_BASE_URL}/account/settings`,
       content: intl.formatMessage(messages['header.user.menu.account.settings']),
     },
-    {
-      type: 'item',
-      href: config.ORDER_HISTORY_URL,
-      content: intl.formatMessage(messages['header.user.menu.order.history']),
-    },
+    // {
+    //   type: 'item',
+    //   href: config.ORDER_HISTORY_URL,
+    //   content: intl.formatMessage(messages['header.user.menu.order.history']),
+    // },
     {
       type: 'item',
       href: config.LOGOUT_URL,
