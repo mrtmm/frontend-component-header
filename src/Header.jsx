@@ -41,16 +41,16 @@ function Header({ intl }) {
   ];
 
   const userMenu = authenticatedUser === null ? [] : [
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
-      content: intl.formatMessage(messages['header.user.menu.dashboard']),
-    },
-    {
-      type: 'item',
-      href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
-      content: intl.formatMessage(messages['header.user.menu.profile']),
-    },
+    // {
+    //   type: 'item',
+    //   href: `${config.LMS_BASE_URL}/dashboard`,
+    //   content: intl.formatMessage(messages['header.user.menu.dashboard']),
+    // },
+    // {
+    //   type: 'item',
+    //   href: `${config.LMS_BASE_URL}/u/${authenticatedUser.username}`,
+    //   content: intl.formatMessage(messages['header.user.menu.profile']),
+    // },
     {
       type: 'item',
       href: `${config.LMS_BASE_URL}/account/settings`,
